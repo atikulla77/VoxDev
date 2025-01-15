@@ -1,0 +1,91 @@
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: #f5f8fc;
+}
+::-webkit-scrollbar-thumb {
+  background: #999999;
+  border-radius: 20px;
+}
+
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1220px;
+  }
+}
+.container2 {
+  width: 100%;
+}
+@media (min-width: 420px) {
+  .container2 {
+    max-width: 310px;
+  }
+}
+@media (min-width: 768px) {
+  .container2 {
+    max-width: 615px;
+  }
+}
+@media (min-width: 1024px) {
+  .container2 {
+    max-width: 910px;
+  }
+}
+@media (min-width: 1280px) {
+  .container2 {
+    max-width: 1190px;
+  }
+}
+
+
+/* ```````Nav Mobile view Manu Bar Animation```````` */
+.NavberMViewAnimationLeft{
+  animation: mobileViewManuBarAnimationLeft 0.3s forwards;
+}
+@keyframes mobileViewManuBarAnimationLeft{
+  0%{
+    right: -250px;
+  }
+  100%{
+    right: 0px;
+  }
+}
+.NavberMViewAnimationRight{
+  animation: mobileViewManuBarAnimationRight 0.3s forwards;
+}
+@keyframes mobileViewManuBarAnimationRight{
+  0%{
+    right: 0px;
+  }
+  100%{
+    right: -250px;
+  }
+}
+
+.slick-list{
+  height: 310px;
+}
+
+
+.WhatWeDo_HoverEffectCard:hover .WhatWeDo_HoverEffectCardReadMore{
+  color: #1fb5f0;
+}
+
