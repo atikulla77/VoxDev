@@ -61,9 +61,9 @@ function Footer() {
       </div>
       <footer className="text-black body-font w-full pt-[5rem]">
         {/* Footer Main Content */}
-        <div className="w-full xl:!px-0 [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem] border-t-[1px] border-t-[#00000038] border-dashed z-10 relative">
+        <div className="w-full [@media(min-width:1290px)]:!px-0 [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem] border-t-[1px] border-t-[#00000038] border-dashed z-10 relative">
           {/* Border + left right */}
-          <div className="relative xl:w-[1230px] w-[100%] mx-auto">
+          <div className="relative [@media(min-width:1290px)]:w-[1290px] w-[100%] mx-auto">
             {/* Side Border Left */}
             <div className="absolute left-[-1px] top-[-7px] w-[2px] h-[14px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
             <div className="absolute left-[-7px] top-[-1px] w-[14px] h-[2px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
@@ -72,18 +72,21 @@ function Footer() {
             <div className="absolute right-[-7px] top-[-1px] w-[14px] h-[2px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
           </div>
           {/* ------content------ */}
-          <div className="xl:w-[1230px] w-[100%] md:pt-[5rem] pt-[3.5rem] mx-auto z-10 relative border-x-[1px] border-dashed border-x-[#00000038]">
+          <div className="[@media(min-width:1290px)]:w-[1290px] w-[100%] md:pt-[5rem] pt-[3.5rem] mx-auto z-10 relative border-x-[1px] border-dashed border-x-[#00000038]">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <div className="lg:w-[142px] md:w-[155px] w-full mx-auto flex md:justify-start justify-center items-center">
-              <img
-                src={footerLogo1}
-                className="sm:w-[30px] w-[25px] sm:h-[30px] h-[25px] rounded-[3px]"
-              />
-              <img src={footerLogo2} className="sm:w-[80px] w-[75px] ml-[10px]" />
+              <div className="lg:w-[142px] md:w-[155px] w-full mx-auto flex md:justify-start justify-center items-center">
+                <img
+                  src={footerLogo1}
+                  className="sm:w-[25px] w-[20px] sm:h-[25px] h-[20px] rounded-[3px]"
+                />
+                <img
+                  src={footerLogo2}
+                  className="sm:w-[75px] w-[70px] ml-[10px]"
+                />
               </div>
             </div>
           </div>
-          <div className="xl:w-[1230px] w-[100%] px-5 md:pt-[2rem] pt-0 md:pb-[5rem] pb-[1rem] mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col z-10 relative border-x-[1px] border-dashed border-x-[#00000038]">
+          <div className="[@media(min-width:1290px)]:w-[1290px] w-[100%] px-5 md:pt-[2rem] pt-0 md:pb-[5rem] pb-[1rem] mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col z-10 relative border-x-[1px] border-dashed border-x-[#00000038]">
             <div className="flex-grow flex flex-wrap md:mt-0 mt-[30px] md:text-left text-center z-10 mx-auto">
               {FooterData.map((key) => {
                 return (
@@ -109,9 +112,9 @@ function Footer() {
           </div>
         </div>
         {/* Footer Bottom Content */}
-        <div className="w-full border-t-[1px] border-t-[#00000038] border-dashed xl:!px-0 [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem] z-10 relative">
+        <div className="w-full border-t-[1px] border-t-[#00000038] border-dashed [@media(min-width:1290px)]:!px-0 [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem] z-10 relative">
           {/* Border + left right */}
-          <div className="relative xl:w-[1230px] w-[100%] mx-auto">
+          <div className="relative [@media(min-width:1290px)]:w-[1290px] w-[100%] mx-auto">
             {/* Side Border Left */}
             <div className="absolute left-[-1px] top-[-7px] w-[2px] h-[14px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
             <div className="absolute left-[-7px] top-[-1px] w-[14px] h-[2px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
@@ -121,7 +124,7 @@ function Footer() {
           </div>
           {/* ------content------ */}
           <div className="w-full">
-            <div className="xl:w-[1230px] w-[100%] border-x-[1px] border-x-[#00000038] border-dashed py-[18px] flex flex-wrap flex-col sm:flex-row items-center  mx-auto [@media(min-width:450px)]:px-[3rem] px-[1.5rem] text-[#000000c2] GeologicaFont relative">
+            <div className="[@media(min-width:1290px)]:w-[1290px] w-[100%] border-x-[1px] border-x-[#00000038] border-dashed py-[18px] flex flex-wrap flex-col sm:flex-row items-center  mx-auto [@media(min-width:450px)]:px-[3rem] px-[1.5rem] text-[#000000c2] GeologicaFont relative">
               <span className="flex flex-wrap sm:hidden sm:ml-auto justify-center sm:justify-start z-10 pb-[10px] text-[13px]">
                 <a href="" className="cursor-pointer">
                   Term of use
