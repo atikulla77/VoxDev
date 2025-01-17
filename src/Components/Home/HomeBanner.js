@@ -29,6 +29,14 @@ function HomeBanner() {
           />
         </div>
       </div>
+      <div className="absolute left-[-170px] top-0 w-full flex justify-center z-[0]">
+        <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-start">
+          <img
+            src={partical_1}
+            className="[@media(min-width:660px)]:!w-[170px] [@media(min-width:460px)]:w-[140px] w-[120px] scale-x-[-1]"
+          />
+        </div>
+      </div>
 
       <div className="w-full h-full [@media(min-width:1290px)]:!px-0 [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem] border-b-[1px] border-b-[#00000038] border-dashed">
         <div className="[@media(min-width:1290px)]:w-[1290px] w-[100%] h-full [@media(min-width:920px)]:py-[4rem] py-0  flex [@media(min-width:920px)]:flex-row flex-col justify-between items-center mx-auto  relative border-x-[1px] border-dashed border-x-[#00000038] [@media(min-width:1290px)]:!px-[3rem] [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem]">
