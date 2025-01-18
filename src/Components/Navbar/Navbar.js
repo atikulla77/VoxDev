@@ -1,6 +1,5 @@
 import { useState } from "react";
-import logo1 from "../../Image/logo_4.jpg";
-import logo2 from "../../Image/web_logo_5.png";
+import logo2 from "../../Image/web_logo_6.png";
 
 import { HiOutlineMenu } from "react-icons/hi";
 
@@ -85,15 +84,9 @@ function Navber() {
             {/* content */}
             <div className="w-full flex justify-between items-center [@media(min-width:1290px)]:!px-[3rem] [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem]">
               <Link to="Home" className="flex items-center z-[2] ">
-                <div className="w-[29px] h-[29px] rounded-[3px] flex justify-center items-center relative overflow-hidden border-[2px] border-[#FFAC2A]">
-                  <img
-                    src={logo1}
-                    className="w-[91%] h-[91%] select-none cursor-pointer rounded-[3px] relative z-[2]"
-                  />
-                </div>
                 <img
                   src={logo2}
-                  className="w-[80px] select-none cursor-pointer ml-[7px]"
+                  className="w-[80px] select-none cursor-pointer drop-shadow-[0px_0px_2px_#ffffff]"
                 />
               </Link>
 
@@ -130,7 +123,7 @@ function Navber() {
                 } z-[2]`}
                 onClick={() => setNevMobileVButton(true)}
               >
-                <HiOutlineMenu className="[@media(min-width:420px)]:text-[25px] text-[23px]" />
+                <HiOutlineMenu className="[@media(min-width:420px)]:text-[23px] text-[21px]" />
               </div>
               <div
                 className={`${
