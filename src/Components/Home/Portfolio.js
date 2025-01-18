@@ -113,7 +113,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative" id="Portfolio">
       <div className="absolute left-0 top-0 w-full flex justify-center overflow-hidden z-[0]">
         <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-start">
           <img
@@ -138,7 +138,7 @@ const Portfolio = () => {
           <div className="absolute right-[-1px] bottom-[-7px] w-[2px] h-[14px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
           <div className="absolute right-[-7px] bottom-[-1px] w-[14px] h-[2px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
           {/* Tittle */}
-          <div className="[@media(min-width:600px)]:w-[13.5rem] [@media(min-width:460px)]:w-[10.5rem] w-[8.8rem] [@media(min-width:600px)]:!h-[20px] [@media(min-width:460px)]:h-[16px] h-[14px] text-[#130f49] text-center flex items-center justify-center z-10 [@media(min-width:460px)]:mb-[30px] mb-[15px] mx-auto relative">
+          <div className="[@media(min-width:600px)]:w-[13.5rem] [@media(min-width:460px)]:w-[10.5rem] w-[8.8rem] [@media(min-width:600px)]:!h-[20px] [@media(min-width:460px)]:h-[16px] h-[14px] text-[#130f49] text-center flex flex-col items-center justify-center z-10  mx-auto relative">
             <h1 className="[@media(min-width:600px)]:text-[28px] [@media(min-width:460px)]:text-[22px] text-[19px] font-[700] Poppins uppercase">
               Portfolio
             </h1>
@@ -157,6 +157,10 @@ const Portfolio = () => {
               />
             </div>
           </div>
+          <p className="[@media(min-width:570px)]:text-[14px] [@media(min-width:460px)]:text-[13px] text-[11px] text-[#5b5b5b] font-[600] w-full text-center [@media(min-width:460px)]:mb-[25px] mb-[15px] pt-[13px]">
+            Duis aute irure dolor in reprehen pteur sint<br className="[@media(min-width:570px)]:hidden flex" /> occaecat cupidatat non
+            <br className="[@media(min-width:570px)]:flex hidden" /> proident,<br className="[@media(min-width:570px)]:hidden flex" /> sunt in culim id est.
+          </p>
           {/* Main - Content */}
           <div className="w-[100%] relative z-[1] flex flex-col justify-center items-center GeologicaFont">
             <div className="flex items-center justify-center text-center w-[100%]">
