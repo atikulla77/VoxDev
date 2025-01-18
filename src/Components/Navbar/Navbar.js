@@ -139,7 +139,7 @@ function Navber() {
               </div>
               {/* ---------------Mobile Nav Item--------------- */}
               <div
-                className={`absolute [@media(min-width:500px)]:top-[4rem] top-[3.5rem] right-0 [@media(min-width:450px)]:w-[12rem] w-[11rem] bg-[#fff] border-b-[2px] border-l-[2px] border-t-[2px] border-dotted border-[#00000038] z-0 ${
+                className={`absolute [@media(min-width:500px)]:top-[4rem] top-[3.5rem] right-[-1px] [@media(min-width:450px)]:w-[11rem] w-[10rem] bg-[#fff] border-[1px] border-dashed border-[#00000038] z-0 ${
                   nevMobileVButton
                     ? "flex [@media(min-width:830px)]:hidden"
                     : "hidden"
@@ -155,7 +155,7 @@ function Navber() {
                         smooth={true}
                         offset={-50}
                         duration={300}
-                        className={`w-full pl-[2rem] py-2 [@media(min-width:450px)]:text-[13px] text-[12px] font-medium cursor-pointer block`}
+                        className={`w-full pl-[2rem] py-2 [@media(min-width:450px)]:text-[12px] text-[11px] font-medium cursor-pointer block`}
                         aria-current="page"
                         onClick={() => setNevMobileVButton(false)}
                       >

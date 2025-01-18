@@ -1,7 +1,6 @@
 import React from "react";
 import footer1 from "../../Image/Partical_6.png";
-import footerLogo1 from "../../Image/logo_1.jpg";
-import footerLogo2 from "../../Image/web_logo_2.png";
+import logo2 from "../../Image/web_logo_6.png";
 
 function Footer() {
   const FooterData = [
@@ -75,13 +74,9 @@ function Footer() {
           <div className="[@media(min-width:1290px)]:w-[1290px] w-[100%] md:pt-[5rem] pt-[3.5rem] mx-auto z-10 relative border-x-[1px] border-dashed border-x-[#00000038]">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <div className="lg:w-[142px] md:w-[155px] w-full mx-auto flex md:justify-start justify-center items-center">
-                <img
-                  src={footerLogo1}
-                  className="sm:w-[25px] w-[20px] sm:h-[25px] h-[20px] rounded-[3px]"
-                />
-                <img
-                  src={footerLogo2}
-                  className="sm:w-[75px] w-[70px] ml-[10px]"
+              <img
+                  src={logo2}
+                  className="w-[80px] select-none cursor-pointer drop-shadow-[0px_0px_2px_#ffffff]"
                 />
               </div>
             </div>
