@@ -159,7 +159,7 @@ const Portfolio = () => {
           </div>
           {/* Main - Content */}
           <div className="w-[100%] relative z-[1] flex flex-col justify-center items-center GeologicaFont">
-            <div className="flex items-center justify-center text-center w-[100%]  mx-auto protfolio-Scroll-bar ">
+            <div className="flex items-center justify-center text-center w-[100%]">
               <ul className="flex justify-center items-center font-[400]">
                 <li
                   className={`[@media(min-width:460px)]:text-[15px] text-[12px] cursor-pointer ${
@@ -174,7 +174,7 @@ const Portfolio = () => {
 
                 {PortfolioNavItem.map((key) => {
                   return (
-                    <div className="flex items-center">
+                    <div className="flex items-center" key={key.id}>
                       <div className="text-[#FFAC2A] [@media(min-width:460px)]:text-[19px] text-[15px] [@media(min-width:460px)]:mx-[1rem] mx-[0.6rem] drop-shadow-[0px_0px_1px_#FFAC2A]">
                         |
                       </div>
@@ -198,7 +198,7 @@ const Portfolio = () => {
               {Catagory.map((catagory) => (
                 <div key={catagory.id}>
                   <label
-                    className={`[@media(min-width:450px)]:!w-[350px] [@media(min-width:400px)]:w-[300px] w-[280px] h-[100%] overflow-hidden [@media(min-width:450px)]:mx-[15px] mx-0 my-[15px] relative flex justify-center items-center cursor-pointer shadow-[0px_0px_6px_0px_#00000030] rounded-[5px]`}
+                    className={`[@media(min-width:450px)]:!w-[350px] [@media(min-width:400px)]:w-[300px] w-[280px] h-[100%] overflow-hidden [@media(min-width:450px)]:mx-[15px] mx-0 my-[15px] relative flex justify-center items-center cursor-pointer shadow-[0px_0px_6px_0px_#00000024] rounded-[5px]`}
                   >
                     <div
                       onClick={() => {
