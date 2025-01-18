@@ -12,13 +12,13 @@ function Navber() {
       name: "Home",
       link: "Home",
       scrollY: 0,
-      scrollYEnd: 650,
+      scrollYEnd: 630,
     },
     {
       id: 2,
       name: "About",
       link: "About",
-      scrollY: 640,
+      scrollY: 630,
       scrollYEnd: 800,
     },
     {
@@ -104,7 +104,7 @@ function Navber() {
                         duration={300}
                         className={`sm:px-3 px-[5px] py-2 text-[13px] font-medium cursor-pointer ${
                           window.scrollY >= key.scrollY ? `${window.scrollY >= key.scrollYEnd ? "" : "text-[#FFAC2A]"}` : ""
-                        } hover:text-[#FFAC2A] transition-[0.2s]`}
+                        } hover:text-[#FFAC2A]`}
                         aria-current="page"
                       >
                         {key.name}

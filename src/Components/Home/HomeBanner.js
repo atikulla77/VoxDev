@@ -19,7 +19,7 @@ function HomeBanner() {
     deleteSpeed: 50,
   });
   return (
-    <div className="w-full h-full [@media(min-width:500px)]:pt-[75px] pt-[55px] relative mb-[10rem]" name="Home">
+    <div className="w-full h-full [@media(min-width:500px)]:pt-[75px] pt-[55px] relative" name="Home">
       <Navber />
       <div className="absolute left-0 top-0 w-full flex justify-center z-[0]">
         <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-start">
