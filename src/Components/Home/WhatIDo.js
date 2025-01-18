@@ -5,6 +5,7 @@ import { FaPencilRuler } from "react-icons/fa";
 import { FaPaintbrush } from "react-icons/fa6";
 import { FaChartArea } from "react-icons/fa";
 import { FaBullhorn } from "react-icons/fa";
+import tittlePartical from "../../Image/tittle_partical.png";
 
 const WhatIDo = () => {
   const MyServicesData = [
@@ -12,37 +13,37 @@ const WhatIDo = () => {
       id: 1,
       icon: <FaPalette />,
       tittle: "Graphic Design",
-      MarginBottom: "mt-[0px] mb-[20px]"
+      MarginBottom: "mt-[0px] mb-[20px]",
     },
     {
       id: 2,
       icon: <FaDesktop />,
       tittle: "Web Design",
-      MarginBottom: "[@media(min-width:1065px)]:mt-[0px] mt-[20px] mb-[20px]"
+      MarginBottom: "[@media(min-width:1065px)]:mt-[0px] mt-[20px] mb-[20px]",
     },
     {
       id: 3,
       icon: <FaPencilRuler />,
       tittle: "UI/UX Design",
-      MarginBottom: "mt-[20px] mb-[20px]"
+      MarginBottom: "mt-[20px] mb-[20px]",
     },
     {
       id: 4,
       icon: <FaPaintbrush />,
       tittle: "App Design & Develop",
-      MarginBottom: "mt-[20px] mb-[20px]"
+      MarginBottom: "mt-[20px] mb-[20px]",
     },
     {
       id: 5,
       icon: <FaChartArea />,
       tittle: "Business Analysis",
-      MarginBottom: "mt-[20px] [@media(min-width:1065px)]:mb-[0px] mb-[20px]"
+      MarginBottom: "mt-[20px] [@media(min-width:1065px)]:mb-[0px] mb-[20px]",
     },
     {
       id: 6,
       icon: <FaBullhorn />,
       tittle: "SEO Marketing",
-      MarginBottom: "mt-[20px] mb-[0px]"
+      MarginBottom: "mt-[20px] mb-[0px]",
     },
   ];
 
@@ -59,23 +60,23 @@ const WhatIDo = () => {
           <div className="absolute right-[-1px] bottom-[-7px] w-[2px] h-[14px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
           <div className="absolute right-[-7px] bottom-[-1px] w-[14px] h-[2px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
           {/* content */}
-          <div className="[@media(min-width:600px)]:w-[14rem] [@media(min-width:460px)]:w-[11rem] w-[9.3rem] [@media(min-width:600px)]:h-[20px] [@media(min-width:460px)]:h-[16px] h-[15px] text-[#130f49] text-center flex items-center justify-center z-10 mb-[30px] mx-auto relative">
+          <div className="[@media(min-width:600px)]:w-[14rem] [@media(min-width:460px)]:w-[11rem] w-[9.3rem] [@media(min-width:600px)]:h-[20px] [@media(min-width:460px)]:h-[16px] h-[14px] text-[#130f49] text-center flex items-center justify-center z-10 mb-[30px] mx-auto relative">
             <h1 className="[@media(min-width:600px)]:text-[28px] [@media(min-width:460px)]:text-[22px] text-[19px] font-[700] Poppins uppercase">
               What I Do?
             </h1>
             {/* Tittle Left Partical */}
             <div className="absolute left-[-5px] bottom-0">
-              <div className="relative">
-                <div className="absolute left-0 bottom-0 [@media(min-width:600px)]:w-[20px] [@media(min-width:460px)]:w-[15px] w-[13px] [@media(min-width:600px)]:h-[20px] [@media(min-width:460px)]:h-[15px] h-[13px] bg-[#FFAC2A]"></div>
-                <div className="absolute [@media(min-width:600px)]:left-[-16px] left-[-14px] [@media(min-width:600px)]:bottom-[4px] bottom-[3px] [@media(min-width:600px)]:w-[32px] w-[27px] [@media(min-width:600px)]:h-[35px] h-[30px] bg-[#ffffff] rotate-45"></div>
-              </div>
+              <img
+                src={tittlePartical}
+                className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px]"
+              />
             </div>
             {/* Tittle Right Partical */}
             <div className="absolute right-[-5px] bottom-0">
-              <div className="relative">
-                <div className="absolute right-0 bottom-0 [@media(min-width:600px)]:w-[20px] [@media(min-width:460px)]:w-[15px] w-[13px] [@media(min-width:600px)]:h-[20px] [@media(min-width:460px)]:h-[15px] h-[13px] bg-[#FFAC2A]"></div>
-                <div className="absolute [@media(min-width:600px)]:right-[-16px] right-[-14px] [@media(min-width:600px)]:bottom-[4px] bottom-[3px] [@media(min-width:600px)]:w-[32px] w-[27px] [@media(min-width:600px)]:h-[35px] h-[30px] bg-[#ffffff] rotate-[-45deg]"></div>
-              </div>
+              <img
+                src={tittlePartical}
+                className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px] scale-x-[-1]"
+              />
             </div>
           </div>
 
@@ -94,8 +95,13 @@ const WhatIDo = () => {
                       {key.tittle}
                     </h1>
                     <p className="[@media(min-width:530px)]:text-[14px] [@media(min-width:430px)]:text-[13px] text-[12px] font-[400] [@media(min-width:530px)]:leading-[23px] leading-[21px] text-[#9f9f9f]">
-                      Lisque persius interesset his et, in quot<br className="[@media(min-width:480px)]:hidden flex" /> quidam
-                      <br className="[@media(min-width:480px)]:flex hidden" /> persequeris vim, ad mea <br className="[@media(min-width:480px)]:hidden flex" />essent possim iriure.
+                      Lisque persius interesset his et, in quot
+                      <br className="[@media(min-width:480px)]:hidden flex" />{" "}
+                      quidam
+                      <br className="[@media(min-width:480px)]:flex hidden" />{" "}
+                      persequeris vim, ad mea{" "}
+                      <br className="[@media(min-width:480px)]:hidden flex" />
+                      essent possim iriure.
                     </p>
                   </div>
                 </div>
