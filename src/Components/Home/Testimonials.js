@@ -60,7 +60,7 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: false,
+          infinite: true,
           dots: true,
         },
       },
@@ -69,7 +69,7 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: false,
+          infinite: true,
           dots: true,
         },
       },
@@ -83,7 +83,7 @@ const Testimonials = () => {
     ),
     customPaging: () => (
       <div className="bannerDotliId w-[17px] bottom-0">
-        <GoDotFill className="cursor-pointer [@media(min-width:640px)]:text-[17px] [@media(min-width:440px)]:text-[16px] text-[14px]" />
+        <GoDotFill className="cursor-pointer [@media(min-width:640px)]:!text-[17px] [@media(min-width:440px)]:text-[16px] text-[14px]" />
       </div>
     ),
   };
@@ -119,7 +119,7 @@ const Testimonials = () => {
             <br className="flex" /> but in the heart.
           </p>
           {/* Main - Content */}
-          <div className="w-[100%] [@media(min-width:850px)]:!h-[21rem] [@media(min-width:550px)]:h-[20rem] [@media(min-width:400px)]:h-[17rem] h-[15.5rem] relative z-[1] flex items-center GeologicaFont">
+          <div className="w-[100%] [@media(min-width:550px)]:!h-[20rem] [@media(min-width:400px)]:h-[17rem] h-[15.5rem] relative z-[1] flex items-center GeologicaFont">
             <Slider {...settings} className="w-full h-full">
               {TestimonialClint.map((key) => {
                 return (
@@ -128,7 +128,7 @@ const Testimonials = () => {
                     className="[@media(min-width:640px)]:px-[10px] px-[3px] w-[100%] my-[2.5rem]"
                   >
                     <div className="h-full [@media(min-width:850px)]:w-fit [@media(min-width:480px)]:w-[370px] w-[100%] bg-[#ffffff] [@media(min-width:480px)]:px-6 px-[15px] [@media(min-width:550px)]:pt-[3.5rem] pt-[2.5rem] [@media(min-width:550px)]:pb-[2.5rem] pb-[2rem] rounded-[0.5rem] shadow-[0px_0px_3px_0px_#00000040] text-center relative [@media(min-width:850px)]:mx-0 mx-auto">
-                        <div className="absolute bottom-[-1rem] left-0 w-full flex justify-center z-[-1]">
+                        <div className="absolute [@media(min-width:440px)]:bottom-[-1rem] bottom-[-0.7rem] left-0 w-full flex justify-center z-[-1]">
                             <div className="w-[80%] h-[4rem] bg-white rounded-[0.5rem] shadow-[0px_0px_3px_0px_#00000040]"></div>
                         </div>
                       <div className="absolute [@media(min-width:550px)]:top-[-32.5px] [@media(min-width:400px)]:top-[-22.5px] top-[-25px] left-0 w-full flex justify-center">
