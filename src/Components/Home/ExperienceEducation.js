@@ -62,21 +62,21 @@ const ExperienceEducation = () => {
         <div className="absolute right-[-1px] bottom-[-7px] w-[2px] h-[14px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
         <div className="absolute right-[-7px] bottom-[-1px] w-[14px] h-[2px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
         {/* Tittle */}
-        <div className="[@media(min-width:600px)]:!w-[27rem] [@media(min-width:460px)]:w-[20.5rem] [@media(min-width:400px)]:w-[17.9rem] w-[11rem] [@media(min-width:600px)]:h-[20px] [@media(min-width:400px)]:h-[16px] h-[41px] text-[#130f49] text-center flex items-center justify-center z-10 [@media(min-width:400px)]:mb-[5rem] mb-[3.5rem] mx-auto relative">
-          <h1 className="[@media(min-width:600px)]:text-[28px] [@media(min-width:460px)]:text-[22px] text-[19px] font-[700] Poppins uppercase">
-            Experience <br className="[@media(min-width:400px)]:hidden flex "/>& Education
+        <div className="[@media(min-width:600px)]:!w-[27rem] [@media(min-width:460px)]:w-[12rem] w-[11rem] [@media(min-width:600px)]:!h-[20px] h-[48px] text-[#130f49] text-center flex items-center justify-center z-10 [@media(min-width:400px)]:mb-[5rem] mb-[3.5rem] mx-auto relative">
+          <h1 className="[@media(min-width:600px)]:!text-[28px] [@media(min-width:460px)]:text-[22px] text-[19px] font-[700] Poppins uppercase">
+            Experience <br className="[@media(min-width:600px)]:hidden flex "/>& Education
           </h1>
           {/* Tittle Left Partical */}
           <div className="absolute left-[-5px] bottom-0">
             <div className="relative">
-              <div className="absolute left-0 bottom-0 [@media(min-width:600px)]:w-[20px] [@media(min-width:460px)]:w-[15px] w-[13px] [@media(min-width:600px)]:h-[20px] [@media(min-width:460px)]:h-[15px] h-[13px] bg-[#FFAC2A]"></div>
+              <div className="absolute left-0 bottom-0 [@media(min-width:600px)]:!w-[20px] [@media(min-width:460px)]:w-[15px] w-[13px] [@media(min-width:600px)]:!h-[20px] [@media(min-width:460px)]:h-[15px] h-[13px] bg-[#FFAC2A]"></div>
               <div className="absolute [@media(min-width:600px)]:left-[-16px] left-[-14px] [@media(min-width:600px)]:bottom-[4px] bottom-[3px] [@media(min-width:600px)]:w-[32px] w-[27px] [@media(min-width:600px)]:h-[35px] h-[30px] bg-[#ffffff] rotate-45"></div>
             </div>
           </div>
           {/* Tittle Right Partical */}
           <div className="absolute right-[-5px] bottom-0">
             <div className="relative">
-              <div className="absolute right-0 bottom-0 [@media(min-width:600px)]:w-[20px] [@media(min-width:460px)]:w-[15px] w-[13px] [@media(min-width:600px)]:h-[20px] [@media(min-width:460px)]:h-[15px] h-[13px] bg-[#FFAC2A]"></div>
+              <div className="absolute right-0 bottom-0 [@media(min-width:600px)]:!w-[20px] [@media(min-width:460px)]:w-[15px] w-[13px] [@media(min-width:600px)]:!h-[20px] [@media(min-width:460px)]:h-[15px] h-[13px] bg-[#FFAC2A]"></div>
               <div className="absolute [@media(min-width:600px)]:right-[-16px] right-[-14px] [@media(min-width:600px)]:bottom-[4px] bottom-[3px] [@media(min-width:600px)]:w-[32px] w-[27px] [@media(min-width:600px)]:h-[35px] h-[30px] bg-[#ffffff] rotate-[-45deg]"></div>
             </div>
           </div>

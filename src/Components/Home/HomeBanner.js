@@ -4,13 +4,6 @@ import Navber from "../Navbar/Navbar";
 import profilePhoto from "../../Image/Profile_Pic.png";
 import partical_1 from "../../Image/Partical_1.png";
 
-import { TbBrandGithub } from "react-icons/tb";
-import { FiLinkedin } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa6";
-import { FaBehance } from "react-icons/fa";
-
-import { Link } from "react-scroll";
-
 function HomeBanner() {
   const [text] = useTypewriter({
     words: ["Designer", "Coder", "Player"],
