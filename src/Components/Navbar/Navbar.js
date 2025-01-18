@@ -91,7 +91,7 @@ function Navber() {
               </Link>
 
               {/* ---------------Web Nav Item--------------- */}
-              <div className="[@media(min-width:830px)]:flex hidden items-center justify-center text-black mt-[5px] ">
+              <div className="[@media(min-width:830px)]:flex hidden items-center justify-center text-[#130f49] mt-[5px] ">
                 <div className="flex sm:space-x-4 space-x-1">
                   {navItems.map((key) => {
                     return (
@@ -145,7 +145,7 @@ function Navber() {
                     : "hidden"
                 }`}
               >
-                <div className="w-full h-full flex flex-col justify-start text-left items-center py-[1rem] text-[#696969]">
+                <div className="w-full h-full flex flex-col justify-start text-left items-center py-[1rem] text-[#130f49]">
                   {navItems.map((key) => {
                     return (
                       <Link

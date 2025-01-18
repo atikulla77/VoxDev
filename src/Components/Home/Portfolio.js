@@ -198,7 +198,7 @@ const Portfolio = () => {
               {Catagory.map((catagory) => (
                 <div key={catagory.id}>
                   <label
-                    className={`[@media(min-width:450px)]:!w-[350px] [@media(min-width:400px)]:w-[300px] w-[280px] h-[100%] overflow-hidden [@media(min-width:450px)]:mx-[15px] mx-0 my-[15px] relative flex justify-center items-center cursor-pointer shadow-[0px_0px_6px_0px_#00000024] rounded-[5px]`}
+                    className={`[@media(min-width:450px)]:!w-[350px] [@media(min-width:400px)]:w-[300px] [@media(min-width:360px)]:w-[280px] w-[250px] h-[100%] overflow-hidden [@media(min-width:450px)]:mx-[15px] mx-0 my-[15px] relative flex justify-center items-center cursor-pointer shadow-[0px_0px_6px_0px_#00000024] rounded-[5px]`}
                   >
                     <div
                       onClick={() => {
@@ -242,7 +242,7 @@ const Portfolio = () => {
             onClick={() => {
               setshowPopUpImg(false);
             }}
-            className={`[@media(min-width:555px)]:w-[35px] w-[25px] [@media(min-width:555px)]:h-[35px] h-[25px] flex [@media(min-width:555px)]:text-[45px] text-[35px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-[29] rounded-[50%]`}
+            className={`text-[#696969] [@media(min-width:555px)]:w-[35px] w-[25px] [@media(min-width:555px)]:h-[35px] h-[25px] flex [@media(min-width:555px)]:text-[45px] text-[35px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-[29] rounded-[50%]`}
           >
             +
           </p>
