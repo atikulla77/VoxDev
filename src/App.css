@@ -114,6 +114,11 @@
     width: 7px;
   }
 }
+@media screen and (max-width: 440px) {
+  #bannerDotliId li {
+    width: 4px;
+  }
+}
 #bannerDotId .slick-active .bannerDotliId {
   color: #FFAC2A;
 }
