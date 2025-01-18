@@ -4,6 +4,7 @@ import Footer from "../Components/Footer/Footer";
 import WhatIDo from "../Components/Home/WhatIDo";
 import ExperienceEducation from "../Components/Home/ExperienceEducation";
 import Branding from "../Components/Home/Branding";
+import Portfolio from "../Components/Home/Portfolio";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HomeBanner />
       <Branding />
       <ExperienceEducation />
+      <Portfolio />
       <WhatIDo />
       <Footer />
     </div>
