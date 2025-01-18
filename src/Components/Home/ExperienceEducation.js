@@ -62,7 +62,7 @@ const ExperienceEducation = () => {
         <div className="absolute right-[-1px] bottom-[-7px] w-[2px] h-[14px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
         <div className="absolute right-[-7px] bottom-[-1px] w-[14px] h-[2px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
         {/* Tittle */}
-        <div className="[@media(min-width:600px)]:!w-[27rem] [@media(min-width:460px)]:w-[12rem] w-[11rem] [@media(min-width:600px)]:!h-[20px] h-[48px] text-[#130f49] text-center flex items-center justify-center z-10 [@media(min-width:400px)]:mb-[5rem] mb-[3.5rem] mx-auto relative">
+        <div className="[@media(min-width:600px)]:!w-[27rem] [@media(min-width:460px)]:w-[12rem] w-[11rem] [@media(min-width:600px)]:!h-[20px] [@media(min-width:460px)]:h-[48px] h-[41px] text-[#130f49] text-center flex items-center justify-center z-10 [@media(min-width:400px)]:mb-[5rem] mb-[3.5rem] mx-auto relative">
           <h1 className="[@media(min-width:600px)]:!text-[28px] [@media(min-width:460px)]:text-[22px] text-[19px] font-[700] Poppins uppercase">
             Experience <br className="[@media(min-width:600px)]:hidden flex "/>& Education
           </h1>
