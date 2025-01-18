@@ -74,7 +74,7 @@ function Navber() {
           className="mx-auto px-0 [@media(min-width:1290px)]:!w-[1290px] w-[100%]"
           // data-aos="fade-down"
         >
-          <div className="h-[4rem] w-full flex items-center justify-center GeologicaFont relative border-x-[1px] border-dashed border-x-[#00000038] ">
+          <div className="[@media(min-width:500px)]:h-[4rem] h-[3.5rem] w-full flex items-center justify-center GeologicaFont relative border-x-[1px] border-dashed border-x-[#00000038] ">
             {/* Side Border Left */}
             <div className="absolute left-[-1px] bottom-[-7px] w-[2px] h-[14px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
             <div className="absolute left-[-7px] bottom-[-1px] w-[14px] h-[2px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
@@ -103,8 +103,8 @@ function Navber() {
                         offset={-70}
                         duration={300}
                         className={`sm:px-3 px-[5px] py-2 text-[13px] font-medium cursor-pointer ${
-                          window.scrollY >= key.scrollY ? `${window.scrollY >= key.scrollYEnd ? "" : "text-[#ffc304]"}` : ""
-                        } hover:text-[#ffc304] transition-[0.2s]`}
+                          window.scrollY >= key.scrollY ? `${window.scrollY >= key.scrollYEnd ? "" : "text-[#FFAC2A]"}` : ""
+                        } hover:text-[#FFAC2A] transition-[0.2s]`}
                         aria-current="page"
                       >
                         {key.name}
@@ -123,7 +123,7 @@ function Navber() {
                 } z-[2]`}
                 onClick={() => setNevMobileVButton(true)}
               >
-                <HiOutlineMenu className="[@media(min-width:420px)]:text-[23px] text-[21px]" />
+                <HiOutlineMenu className="[@media(min-width:420px)]:text-[23px] text-[21px] text-[#696969]" />
               </div>
               <div
                 className={`${
@@ -133,19 +133,19 @@ function Navber() {
                 } z-[2]`}
                 onClick={() => setNevMobileVButton(false)}
               >
-                <p className="[@media(min-width:420px)]:text-[40px] text-[38px] rotate-[45deg]">
+                <p className="[@media(min-width:420px)]:text-[36px] text-[34px] rotate-[45deg] text-[#696969]">
                   +
                 </p>
               </div>
               {/* ---------------Mobile Nav Item--------------- */}
               <div
-                className={`absolute top-0 left-0 w-full h-[100vh] bg-[#1e1345ed] z-0 ${
+                className={`absolute [@media(min-width:500px)]:top-[4rem] top-[3.5rem] right-0 [@media(min-width:450px)]:w-[12rem] w-[11rem] bg-[#fff] border-b-[2px] border-l-[2px] border-t-[2px] border-dotted border-[#00000038] z-0 ${
                   nevMobileVButton
                     ? "flex [@media(min-width:830px)]:hidden"
                     : "hidden"
                 }`}
               >
-                <div className="w-full h-full flex flex-col justify-center items-center">
+                <div className="w-full h-full flex flex-col justify-start text-left items-center py-[1rem] text-[#696969]">
                   {navItems.map((key) => {
                     return (
                       <Link
@@ -155,7 +155,7 @@ function Navber() {
                         smooth={true}
                         offset={-50}
                         duration={300}
-                        className="sm:px-3 px-[5px] py-2 [@media(min-width:420px)]:text-base text-[14px] font-medium cursor-pointer block"
+                        className={`w-full pl-[2rem] py-2 [@media(min-width:450px)]:text-[13px] text-[12px] font-medium cursor-pointer block`}
                         aria-current="page"
                         onClick={() => setNevMobileVButton(false)}
                       >
