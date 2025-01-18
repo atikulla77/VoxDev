@@ -58,7 +58,7 @@ function Footer() {
           className="w-full h-full object-cover object-bottom"
         />
       </div>
-      <footer className="text-black body-font w-full pt-[5rem]">
+      <footer className="text-black body-font w-full">
         {/* Footer Main Content */}
         <div className="w-full [@media(min-width:1290px)]:!px-0 [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem] border-t-[1px] border-t-[#00000038] border-dashed z-10 relative">
           {/* Border + left right */}

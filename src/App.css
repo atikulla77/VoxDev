@@ -97,3 +97,23 @@
 .portfolioCard:hover .portfolioCardImgInfo {
   display: flex;
 }
+
+
+/* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-{````Testimonial````}_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+.bannerDotliId {
+  color: #00000045;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bannerDotId li {
+  width: 17px;
+}
+@media screen and (max-width: 640px) {
+  #bannerDotId li {
+    width: 7px;
+  }
+}
+#bannerDotId .slick-active .bannerDotliId {
+  color: #FFAC2A;
+}

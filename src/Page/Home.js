@@ -5,6 +5,7 @@ import WhatIDo from "../Components/Home/WhatIDo";
 import ExperienceEducation from "../Components/Home/ExperienceEducation";
 import Branding from "../Components/Home/Branding";
 import Portfolio from "../Components/Home/Portfolio";
+import Testimonials from "../Components/Home/Testimonials";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <ExperienceEducation />
       <Portfolio />
       <WhatIDo />
+      <Testimonials />
       <Footer />
     </div>
   );
