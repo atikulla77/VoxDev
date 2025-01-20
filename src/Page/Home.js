@@ -6,12 +6,14 @@ import ExperienceEducation from "../Components/Home/ExperienceEducation";
 import Branding from "../Components/Home/Branding";
 import Portfolio from "../Components/Home/Portfolio";
 import Testimonials from "../Components/Home/Testimonials";
+import AboutMe from "../Components/Home/AboutMe";
 
 const Home = () => {
   return (
     <div className="w-full h-[100%]">
       <HomeBanner />
       <Branding />
+      <AboutMe />
       <ExperienceEducation />
       <Portfolio />
       <WhatIDo />

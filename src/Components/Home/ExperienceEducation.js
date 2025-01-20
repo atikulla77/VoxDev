@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBriefcase } from "react-icons/fa";
-import partical_1 from "../../Image/Partical_2.png";
+import partical_1 from "../../Image/Partical_3.png";
 import tittlePartical from "../../Image/tittle_partical.png";
 
 const ExperienceEducation = () => {
@@ -54,19 +54,19 @@ const ExperienceEducation = () => {
 
   return (
     <div className="w-full h-full relative">
-      <div className="absolute right-0 top-0 w-full flex justify-center overflow-hidden z-[0]">
-        <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-end">
-          <img
-            src={partical_1}
-            className="[@media(min-width:660px)]:!w-[170px] [@media(min-width:460px)]:w-[140px] w-[120px]"
-          />
-        </div>
+    <div className="absolute left-0 top-0 w-full flex justify-center overflow-hidden z-[0]">
+      <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-start">
+        <img
+          src={partical_1}
+          className="[@media(min-width:660px)]:!w-[170px] [@media(min-width:460px)]:w-[140px] w-[120px]"
+        />
       </div>
-      <div className="absolute right-[-170px] top-0 w-full [@media(min-width:1536px)]:flex hidden justify-center overflow-hidden z-[0]">
-        <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-end">
-          <img src={partical_1} className="w-[170px] scale-x-[-1]" />
-        </div>
+    </div>
+    <div className="absolute left-[-170px] top-0 w-full [@media(min-width:1536px)]:flex hidden justify-center overflow-hidden z-[0]">
+      <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-start">
+        <img src={partical_1} className="w-[170px] scale-x-[-1]" />
       </div>
+    </div>
       <main
         className={`w-full h-full relative border-b-[1px] border-b-[#00000038] border-dashed [@media(min-width:1290px)]:!px-[3rem] [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem]`}
       >
