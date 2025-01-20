@@ -84,7 +84,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <div className="w-full h-full relative" id="Testimonials">
+    <div className="w-full h-full relative" id="About">
       <div className="absolute right-0 top-0 w-full flex justify-center overflow-hidden z-[0]">
         <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-end">
           <img
@@ -122,7 +122,7 @@ const AboutMe = () => {
               />
             </div>
           </div>
-          {/* <p className="[@media(min-width:570px)]:text-[14px] [@media(min-width:460px)]:text-[13px] text-[11px] text-[#5b5b5b] font-[600] w-full text-center [@media(min-width:460px)]:mb-[25px] mb-[15px] pt-[13px]">
+          {/* <p className="[@media(min-width:570px)]:text-[14px] [@media(min-width:460px)]:text-[13px] text-[10px] text-[#130f4acc] font-[600] w-full text-center [@media(min-width:460px)]:mb-[25px] mb-[15px] pt-[13px]">
             But pain in reproach is blinding, and desire is not,
             <br className="flex" /> but in the heart.
           </p> */}
@@ -138,7 +138,7 @@ const AboutMe = () => {
                   return (
                     <li
                       key={key.id}
-                      className="flex items-center [@media(min-width:600px)]:justify-start justify-center [@media(min-width:600px)]:pb-[0.5rem] pb-[0.3rem] [@media(min-width:600px)]:text-[14px] text-[13px] text-[#130f49]"
+                      className="flex items-center [@media(min-width:600px)]:justify-start justify-center [@media(min-width:600px)]:pb-[0.5rem] pb-[0.3rem] [@media(min-width:600px)]:text-[14px] [@media(min-width:460px)]:text-[13px] text-[12px] text-[#130f49]"
                     >
                       <p className="pr-[8px]">{key.tittle}</p>
                       <p className="text-[#130f49c7]">{key.info}</p>
@@ -146,7 +146,7 @@ const AboutMe = () => {
                   );
                 })}
               </ul>
-              <button className="w-fit [@media(min-width:600px)]:text-[13px] [@media(min-width:460px)]:text-[12px] text-[11px] mt-[0.9rem] px-[22px] py-[7px] border-[2px] rounded-[10px] border-[#130f49] bg-[#130f49] hover:bg-transparent text-[#fff] hover:text-[#130f49] transition-[0.3s] cursor-pointer [@media(min-width:1070px)]:mx-0 mx-auto">
+              <button className="w-fit [@media(min-width:600px)]:text-[13px] [@media(min-width:460px)]:text-[12px] text-[10px] mt-[0.9rem] px-[22px] py-[7px] border-[2px] rounded-[10px] border-[#130f49] bg-[#130f49] hover:bg-transparent text-[#fff] hover:text-[#130f49] transition-[0.3s] cursor-pointer [@media(min-width:1070px)]:mx-0 mx-auto">
                 Download CV
               </button>
             </div>
@@ -159,17 +159,17 @@ const AboutMe = () => {
                       className={`w-[235px] h-[130px] ${key.dynamicMargin} flex flex-col items-center justify-center px-[20px] py-[20px] shadow-[0px_0px_3px_0px_#0000004f] rounded-[3px] mx-auto`}
                     >
                       <div className="w-[100%] h-[34px] flex items-center relative text-[#FFAC2A]">
-                        <p className="text-[36px] font-[900] InterFont">
+                        <p className="[@media(min-width:460px)]:text-[36px] text-[34px] font-[900] InterFont">
                           {key.numberCount}
                         </p>
                         <div className="h-full">
-                          <FaPlus className="text-[18px] ml-[3px]" />
+                          <FaPlus className="[@media(min-width:460px)]:text-[18px] text-[17px] ml-[3px]" />
                         </div>
                       </div>
 
                       <div className="w-full flex items-center justify-start pt-[0.8rem]">
                         <div className="w-[18px] h-[1px] bg-[#130f49] mr-[0.5rem]"></div>
-                        <p className="text-[#130f49] text-[14px] font-[400] uppercase">
+                        <p className="text-[#130f49] [@media(min-width:460px)]:text-[14px] text-[13px] font-[400] uppercase">
                           {key.tittle}
                         </p>
                       </div>

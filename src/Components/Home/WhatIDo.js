@@ -49,18 +49,18 @@ const WhatIDo = () => {
   ];
 
   return (
-    <div className="w-full h-full relative">
-    <div className="absolute left-0 top-0 w-full flex justify-center overflow-hidden z-[0]">
+    <div className="w-full h-full relative" id="WhatIDo">
+    <div className="absolute left-0 top-0 w-full flex justify-center overflow-hidden z-[1]">
       <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-start">
         <img
           src={partical_1}
-          className="[@media(min-width:660px)]:!w-[170px] [@media(min-width:460px)]:w-[140px] w-[120px] blur-[11px]"
+          className="[@media(min-width:660px)]:!w-[170px] [@media(min-width:460px)]:w-[140px] w-[120px]"
         />
       </div>
     </div>
-    <div className="absolute left-[-170px] top-0 w-full [@media(min-width:1536px)]:flex hidden justify-center overflow-hidden z-[0]">
+    <div className="absolute left-[-155px] top-0 w-full [@media(min-width:1536px)]:flex hidden justify-center overflow-hidden z-[0]">
       <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-start">
-        <img src={partical_1} className="w-[170px] scale-x-[-1] blur-[11px]" />
+        <img src={partical_1} className="w-[170px] scale-x-[-1]" />
       </div>
     </div>
       <main

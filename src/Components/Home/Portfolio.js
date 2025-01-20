@@ -157,8 +157,9 @@ const Portfolio = () => {
               />
             </div>
           </div>
-          <p className="[@media(min-width:570px)]:text-[14px] [@media(min-width:460px)]:text-[13px] text-[11px] text-[#5b5b5b] font-[600] w-full text-center [@media(min-width:460px)]:mb-[25px] mb-[15px] pt-[13px]">
-            But pain in reproach is blinding, and desire is not,<br className="flex" />  but in the heart.
+          <p className="[@media(min-width:570px)]:text-[14px] [@media(min-width:460px)]:text-[13px] text-[10px] text-[#130f4acc] font-[600] w-full text-center [@media(min-width:460px)]:mb-[25px] mb-[15px] pt-[13px]">
+            But pain in reproach is blinding, and desire is not,
+            <br className="flex" /> but in the heart.
           </p>
           {/* Main - Content */}
           <div className="w-[100%] relative z-[1] flex flex-col justify-center items-center GeologicaFont">

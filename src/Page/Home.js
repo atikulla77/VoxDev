@@ -7,6 +7,7 @@ import Branding from "../Components/Home/Branding";
 import Portfolio from "../Components/Home/Portfolio";
 import Testimonials from "../Components/Home/Testimonials";
 import AboutMe from "../Components/Home/AboutMe";
+import Skill from "../Components/Home/Skill";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HomeBanner />
       <Branding />
       <AboutMe />
+      <Skill />
       <ExperienceEducation />
       <Portfolio />
       <WhatIDo />

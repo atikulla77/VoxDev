@@ -44,8 +44,8 @@ function Navber() {
     },
     {
       id: 6,
-      name: "Contact",
-      link: "Contact",
+      name: "What I Do",
+      link: "WhatIDo",
       scrollY: 800,
       scrollYEnd: 650,
     },
@@ -103,7 +103,13 @@ function Navber() {
                         offset={-70}
                         duration={300}
                         className={`sm:px-3 px-[5px] py-2 text-[13px] font-medium cursor-pointer ${
-                          window.scrollY >= key.scrollY ? `${window.scrollY >= key.scrollYEnd ? "" : "text-[#FFAC2A]"}` : ""
+                          window.scrollY >= key.scrollY
+                            ? `${
+                                window.scrollY >= key.scrollYEnd
+                                  ? ""
+                                  : "text-[#FFAC2A]"
+                              }`
+                            : ""
                         } hover:text-[#FFAC2A]`}
                         aria-current="page"
                       >
