@@ -6,13 +6,13 @@ import partical_1 from "../../Image/Partical_1.png";
 
 function HomeBanner() {
   const [text] = useTypewriter({
-    words: ["Designer", "Coder", "Player"],
+    words: ["Designer", "Developer", "Video Editor"],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 50,
   });
   return (
-    <div className="w-full h-full [@media(min-width:500px)]:pt-[75px] pt-[55px] relative" name="Home">
+    <div className="w-full h-full [@media(min-width:500px)]:pt-[75px] pt-[55px] relative" id="Home">
       <Navber />
       <div className="absolute left-0 top-0 w-full flex justify-center z-[0]">
         <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-start">
