@@ -111,14 +111,14 @@ const Testimonials = () => {
               Testimonials
             </h1>
             {/* Tittle Left Partical */}
-            <div className="absolute left-[-5px] bottom-0">
+            <div className="absolute left-[-5px] bottom-0" data-aos="fade-right">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px]"
               />
             </div>
             {/* Tittle Right Partical */}
-            <div className="absolute right-[-5px] bottom-0">
+            <div className="absolute right-[-5px] bottom-0" data-aos="fade-left">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px] scale-x-[-1]"

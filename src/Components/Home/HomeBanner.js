@@ -46,7 +46,7 @@ function HomeBanner() {
             <img src={profilePhoto} className="" />
           </div>
           <div
-            className="[@media(min-width:920px)]:w-[60%] [@media(min-width:768px)]:w-[90%] w-[100%] z-10 GeologicaFont text-[#55527c] relative [@media(min-width:920px)]:text-left text-center [@media(min-width:920px)]:pt-0 pt-[30px] [@media(min-width:920px)]:pb-0 pb-[3rem]"
+            className="[@media(min-width:920px)]:w-[60%] [@media(min-width:768px)]:w-[90%] w-[100%] z-10 GeologicaFont text-[#55527c] relative [@media(min-width:920px)]:text-left text-center [@media(min-width:920px)]:pt-0 pt-[30px] [@media(min-width:920px)]:pb-0 pb-[3rem]" data-aos="fade-right"
           >
             <h1
               className="[@media(min-width:1100px)]:!text-[55px] [@media(min-width:1050px)]:text-[50px] [@media(min-width:500px)]:text-[45px] [@media(min-width:380px)]:text-[30px] text-[25px] [@media(min-width:1050px)]:!leading-[55px] [@media(min-width:500px)]:leading-[50px] [@media(min-width:380px)]:leading-[35px] leading-[27px] font-[700] [@media(min-width:920px)]:mx-[] mx-auto text-[#130f49] ml-[-5px] [@media(min-width:640px)]:pb-[11px] pb-[8px]"
@@ -69,20 +69,19 @@ function HomeBanner() {
             </p>
             <div className="flex [@media(min-width:920px)]:justify-start justify-center items-center pt-[20px] [@media(min-width:920px)]:mx-0 mx-auto">
               <button
-                className="[@media(min-width:920px)]:!text-[13px] [@media(min-width:500px)]:text-[11px] text-[10px] [@media(min-width:920px)]:!px-[25px] px-[23px] [@media(min-width:500px)]:py-[8px] py-[7px] border-[2px] rounded-[10px] border-[#130f49] bg-[#130f49] text-[#fff] social_icon_hover transition-[0.3s] cursor-pointer"
+                className="[@media(min-width:920px)]:!text-[13px] [@media(min-width:500px)]:text-[11px] text-[10px] [@media(min-width:920px)]:!px-[25px] px-[23px] [@media(min-width:500px)]:py-[8px] py-[7px] border-[2px] rounded-[10px] border-[#130f49] bg-[#130f49] hover:bg-transparent text-[#fff] hover:text-[#130f49] social_icon_hover transition-[0.3s] cursor-pointer"
               >
                 Got a Project?
               </button>
               <button
-                className="[@media(min-width:920px)]:!text-[13px] [@media(min-width:500px)]:text-[11px] text-[10px] [@media(min-width:920px)]:!px-[25px] px-[23px] [@media(min-width:500px)]:py-[8px] py-[7px] border-[2px] rounded-[10px] border-[#130f49]  text-[#130f49] social_icon_hover transition-[0.3s] cursor-pointer ml-[0.8rem]"
+                className="[@media(min-width:920px)]:!text-[13px] [@media(min-width:500px)]:text-[11px] text-[10px] [@media(min-width:920px)]:!px-[25px] px-[23px] [@media(min-width:500px)]:py-[8px] py-[7px] border-[2px] rounded-[10px] border-[#130f49] hover:bg-[#130f49] text-[#130f49] hover:text-[#fff] social_icon_hover transition-[0.3s] cursor-pointer ml-[0.8rem]"
               >
                 Let's Talk
               </button>
             </div>
           </div>
           <div
-            className="w-[700px] h-[100%] [@media(min-width:920px)]:flex hidden justify-center items-center z-10 overflow-hidden"
-            data-aos="fade-down"
+            className="w-[700px] h-[100%] [@media(min-width:920px)]:flex hidden justify-center items-center z-10 overflow-hidden" data-aos="fade-left"
           >
             <img src={profilePhoto} className="" />
           </div>

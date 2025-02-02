@@ -143,14 +143,14 @@ const Portfolio = () => {
               Portfolio
             </h1>
             {/* Tittle Left Partical */}
-            <div className="absolute left-[-5px] bottom-0">
+            <div className="absolute left-[-5px] bottom-0" data-aos="fade-right">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px]"
               />
             </div>
             {/* Tittle Right Partical */}
-            <div className="absolute right-[-5px] bottom-0">
+            <div className="absolute right-[-5px] bottom-0" data-aos="fade-left">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px] scale-x-[-1]"
@@ -203,6 +203,7 @@ const Portfolio = () => {
                 <div key={catagory.id}>
                   <label
                     className={`[@media(min-width:450px)]:!w-[350px] [@media(min-width:400px)]:w-[300px] [@media(min-width:360px)]:w-[280px] w-[250px] h-[100%] overflow-hidden [@media(min-width:450px)]:mx-[15px] mx-0 my-[15px] relative flex justify-center items-center cursor-pointer shadow-[0px_0px_6px_0px_#00000024] rounded-[5px]`}
+                     data-aos="fade-up-left"
                   >
                     <div
                       onClick={() => {
@@ -239,7 +240,7 @@ const Portfolio = () => {
           <img
             src={popUpImg}
             className="[@media(min-width:800px)]:!w-auto [@media(min-width:700px)]:w-[35rem] [@media(min-width:575px)]:w-[30rem] [@media(min-width:450px)]:w-[25rem] w-[19.5rem] [@media(min-width:800px)]:h-full h-auto mx-auto absolute right-0 left-0 py-[8px] z-[29]"
-            data-aos="zoom-in"
+             data-aos="zoom-in"
           />
 
           <p

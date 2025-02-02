@@ -1,5 +1,8 @@
 import React from "react";
 import tittlePartical from "../../Image/tittle_partical.png";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
+import { useState } from "react";
 
 const Skill = () => {
   const SkillData = [
@@ -64,6 +67,7 @@ const Skill = () => {
       dynamicMargin: "[@media(min-width:450px)]:mt-[3rem] mt-[2rem]",
     },
   ];
+  const [countState, setCountState] = useState();
 
   return (
     <div className="w-full h-full relative" id="Skill">
@@ -83,14 +87,14 @@ const Skill = () => {
               Skill
             </h1>
             {/* Tittle Left Partical */}
-            <div className="absolute left-[-5px] bottom-0">
+            <div className="absolute left-[-5px] bottom-0" data-aos="fade-right">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:600px)]:w-[19px] w-[15px]"
               />
             </div>
             {/* Tittle Right Partical */}
-            <div className="absolute right-[-5px] bottom-0">
+            <div className="absolute right-[-5px] bottom-0" data-aos="fade-left">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:600px)]:w-[19px] w-[15px] scale-x-[-1]"
@@ -121,12 +125,25 @@ const Skill = () => {
                     <div className="absolute left-0 top-0 w-full h-full rounded-[50%] flex items-center justify-center">
                       <div className="w-[90%] h-[90%] rounded-[50%] bg-[#ffffff] flex items-center justify-center text-center">
                         <div className="w-[40px] [@media(min-width:450px)]:h-[22px] h-[18px] flex items-center justify-center">
-                          <p className="[@media(min-width:450px)]:text-[26px] text-[23px] font-[900] GeologicaFont text-[#FFAC2A]">
-                            {key.progressShow}
-                            <span className="[@media(min-width:450px)]:text-[18px] text-[15px]">
-                              %
-                            </span>
-                          </p>
+                          <ScrollTrigger
+                            onEnter={() => setCountState(true)}
+                            onExit={() => setCountState(false)}
+                          >
+                            <p className="[@media(min-width:450px)]:text-[26px] text-[23px] font-[900] GeologicaFont text-[#FFAC2A]">
+                              {countState && (
+                                <CountUp
+                                  start={0}
+                                  end={key.progressShow}
+                                  duration={3.75}
+                                >
+                                  {key.progressShow}
+                                </CountUp>
+                              )}
+                              <span className="[@media(min-width:450px)]:text-[18px] text-[15px]">
+                                %
+                              </span>
+                            </p>
+                          </ScrollTrigger>
                         </div>
                       </div>
                     </div>

@@ -55,40 +55,37 @@
   }
 }
 
-
 /* ```````Nav Mobile view Manu Bar Animation```````` */
-.NavberMViewAnimationLeft{
+.NavberMViewAnimationLeft {
   animation: mobileViewManuBarAnimationLeft 0.3s forwards;
 }
-@keyframes mobileViewManuBarAnimationLeft{
-  0%{
+@keyframes mobileViewManuBarAnimationLeft {
+  0% {
     right: -250px;
   }
-  100%{
+  100% {
     right: 0px;
   }
 }
-.NavberMViewAnimationRight{
+.NavberMViewAnimationRight {
   animation: mobileViewManuBarAnimationRight 0.3s forwards;
 }
-@keyframes mobileViewManuBarAnimationRight{
-  0%{
+@keyframes mobileViewManuBarAnimationRight {
+  0% {
     right: 0px;
   }
-  100%{
+  100% {
     right: -250px;
   }
 }
 
-.slick-list{
+.slick-list {
   height: 310px;
 }
 
-
-.WhatWeDo_HoverEffectCard:hover .WhatWeDo_HoverEffectCardReadMore{
+.WhatWeDo_HoverEffectCard:hover .WhatWeDo_HoverEffectCardReadMore {
   color: #1fb5f0;
 }
-
 
 /* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-{````Protfolio````}_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 .portfolioCardImgInfo {
@@ -97,7 +94,6 @@
 .portfolioCard:hover .portfolioCardImgInfo {
   display: flex;
 }
-
 
 /* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-{````Testimonial````}_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 .bannerDotliId {
@@ -120,10 +116,10 @@
   }
 }
 #bannerDotId .slick-active .bannerDotliId {
-  color: #FFAC2A;
+  color: #ffac2a;
 }
 
-/* _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-{````Skill````}_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
-.SkillProgress{
-background: conic-gradient(#1fb5f0 3deg , #ececec 0deg);
+
+.Services_HoverEffectCard:hover .Services_HoverEffectCardReadMore{
+  color: #ffac2a;
 }

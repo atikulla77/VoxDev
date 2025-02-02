@@ -8,6 +8,7 @@ import Portfolio from "../Components/Home/Portfolio";
 import Testimonials from "../Components/Home/Testimonials";
 import AboutMe from "../Components/Home/AboutMe";
 import Skill from "../Components/Home/Skill";
+import Services from "../Components/Home/Services";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <ExperienceEducation />
       <Portfolio />
       <WhatIDo />
+      <Services />
       <Testimonials />
       <Footer />
     </div>

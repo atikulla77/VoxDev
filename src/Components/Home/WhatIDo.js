@@ -9,7 +9,7 @@ import partical_1 from "../../Image/Partical_5.png";
 import tittlePartical from "../../Image/tittle_partical.png";
 
 const WhatIDo = () => {
-  const MyServicesData = [
+  const MyWhatIDoData = [
     {
       id: 1,
       icon: <FaPalette />,
@@ -79,14 +79,14 @@ const WhatIDo = () => {
               What I Do?
             </h1>
             {/* Tittle Left Partical */}
-            <div className="absolute left-[-5px] bottom-0">
+            <div className="absolute left-[-5px] bottom-0" data-aos="fade-right">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px]"
               />
             </div>
             {/* Tittle Right Partical */}
-            <div className="absolute right-[-5px] bottom-0">
+            <div className="absolute right-[-5px] bottom-0" data-aos="fade-left">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px] scale-x-[-1]"
@@ -95,11 +95,12 @@ const WhatIDo = () => {
           </div>
 
           <div className="w-full flex flex-wrap justify-center Poppins pt-[2rem]">
-            {MyServicesData.map((key) => {
+            {MyWhatIDoData.map((key) => {
               return (
                 <div
                   key={key.id}
                   className={`[@media(min-width:530px)]:w-[420px] w-[100%] text-black ${key.MarginBottom} [@media(min-width:630px)]:mx-[2rem] mx-0 transition-[0.3s] flex [@media(min-width:480px)]:flex-row flex-col [@media(min-width:480px)]:justify-start justify-center [@media(min-width:480px)]:text-left text-center`}
+                   data-aos="fade-right"
                 >
                   <div className="[@media(min-width:530px)]:text-[32px] text-[28px] [@media(min-width:530px)]:w-[70px] w-[55px] [@media(min-width:530px)]:h-[70px] h-[55px] text-[#FFAC2A] flex justify-center items-center shadow-[0px_0px_4px_0px_#00000029] rounded-[5px] px-[13px] [@media(min-width:480px)]:mx-0 mx-auto">
                     {key.icon}

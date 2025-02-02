@@ -2,6 +2,9 @@ import React from "react";
 import tittlePartical from "../../Image/tittle_partical.png";
 import { FaPlus } from "react-icons/fa6";
 import partical_1 from "../../Image/Partical_2.png";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
+import { useState } from "react";
 
 const AboutMe = () => {
   const PersonalInfosData = [
@@ -82,6 +85,7 @@ const AboutMe = () => {
       numberCount: 53,
     },
   ];
+  const [countState, setCountState] = useState();
 
   return (
     <div className="w-full h-full relative" id="About">
@@ -98,6 +102,7 @@ const AboutMe = () => {
           <img src={partical_1} className="w-[170px] scale-x-[-1]" />
         </div>
       </div>
+
       <main
         className={`w-full h-full relative border-b-[1px] border-b-[#00000038] border-dashed [@media(min-width:1290px)]:!px-[3rem] [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem]`}
       >
@@ -114,14 +119,14 @@ const AboutMe = () => {
               About Me
             </h1>
             {/* Tittle Left Partical */}
-            <div className="absolute left-[-5px] bottom-0">
+            <div className="absolute left-[-5px] bottom-0" data-aos="fade-right">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px]"
               />
             </div>
             {/* Tittle Right Partical */}
-            <div className="absolute right-[-5px] bottom-0">
+            <div className="absolute right-[-5px] bottom-0" data-aos="fade-left">
               <img
                 src={tittlePartical}
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px] scale-x-[-1]"
@@ -165,9 +170,22 @@ const AboutMe = () => {
                       className={`w-[235px] h-[130px] ${key.dynamicMargin} flex flex-col items-center justify-center px-[20px] py-[20px] shadow-[0px_0px_3px_0px_#0000004f] rounded-[3px] mx-auto`}
                     >
                       <div className="w-[100%] h-[34px] flex items-center relative text-[#FFAC2A]">
-                        <p className="[@media(min-width:460px)]:text-[36px] text-[34px] font-[900] InterFont">
-                          {key.numberCount}
-                        </p>
+                        <ScrollTrigger
+                          onEnter={() => setCountState(true)}
+                          onExit={() => setCountState(false)}
+                        >
+                          <p className="[@media(min-width:460px)]:text-[36px] text-[34px] font-[900] InterFont">
+                            {countState && (
+                              <CountUp
+                                start={0}
+                                end={key.numberCount}
+                                duration={3.75}
+                              >
+                                {key.numberCount}
+                              </CountUp>
+                            )}
+                          </p>
+                        </ScrollTrigger>
                         <div className="h-full">
                           <FaPlus className="[@media(min-width:460px)]:text-[18px] text-[17px] ml-[3px]" />
                         </div>

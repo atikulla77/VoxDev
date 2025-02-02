@@ -11,8 +11,8 @@ function Navber ()
     { id: 2, name: "About", link: "About", sectionId: "About" },
     { id: 3, name: "Skill", link: "Skill", sectionId: "Skill" },
     { id: 4, name: "Portfolio", link: "Portfolio", sectionId: "Portfolio" },
-    { id: 5, name: "Service", link: "Service", sectionId: "Service" },
-    { id: 6, name: "What I Do", link: "WhatIDo", sectionId: "WhatIDo" },
+    { id: 5, name: "What I Do", link: "WhatIDo", sectionId: "WhatIDo" },
+    { id: 6, name: "Service", link: "Service", sectionId: "Service" },
   ];
 
   const [ color, setColor ] = useState(false);
@@ -82,7 +82,7 @@ function Navber ()
             <div className="absolute right-[-7px] bottom-[-1px] w-[14px] h-[2px] bg-[#0000003f] rounded-[25px] z-[11]"></div>
 
             {/* Content */}
-            <div className="w-full flex justify-between items-center [@media(min-width:1290px)]:!px-[3rem] [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem]">
+            <div className="w-full flex justify-between items-center [@media(min-width:1290px)]:!px-[3rem] [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem]"  data-aos="fade-down">
               <Link to="Home" className="flex items-center z-[2]">
                 <img
                   src={logo2}
