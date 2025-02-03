@@ -6,13 +6,13 @@ import partical_1 from "../../Image/Partical_1.png";
 
 function HomeBanner() {
   const [text] = useTypewriter({
-    words: ["Designer", "Developer", "Video Editor"],
+    words: ["Designer", "Developer", "Freelancer"],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 50,
   });
   return (
-    <div className="w-full h-full [@media(min-width:500px)]:pt-[75px] pt-[55px] relative" id="Home">
+    <div className="w-full h-full [@media(min-width:500px)]:pt-[70px] pt-[55px] relative" id="Home">
       <Navber />
       <div className="absolute left-0 top-0 w-full flex justify-center z-[0]">
         <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-start">
@@ -49,12 +49,12 @@ function HomeBanner() {
             className="[@media(min-width:920px)]:w-[60%] [@media(min-width:768px)]:w-[90%] w-[100%] z-10 GeologicaFont text-[#55527c] relative [@media(min-width:920px)]:text-left text-center [@media(min-width:920px)]:pt-0 pt-[30px] [@media(min-width:920px)]:pb-0 pb-[3rem]" data-aos="fade-right"
           >
             <h1
-              className="[@media(min-width:1100px)]:!text-[55px] [@media(min-width:1050px)]:text-[50px] [@media(min-width:500px)]:text-[45px] [@media(min-width:380px)]:text-[30px] text-[25px] [@media(min-width:1050px)]:!leading-[55px] [@media(min-width:500px)]:leading-[50px] [@media(min-width:380px)]:leading-[35px] leading-[27px] font-[700] [@media(min-width:920px)]:mx-[] mx-auto text-[#130f49] ml-[-5px] [@media(min-width:640px)]:pb-[11px] pb-[8px]"
+              className="[@media(min-width:1050px)]:!text-[50px] [@media(min-width:500px)]:!text-[40px] [@media(min-width:380px)]:text-[30px] text-[25px] [@media(min-width:1050px)]:!leading-[55px] [@media(min-width:500px)]:!leading-[50px] [@media(min-width:380px)]:leading-[35px] leading-[27px] font-[700] [@media(min-width:920px)]:mx-[] mx-auto text-[#130f49] ml-[-5px] [@media(min-width:640px)]:pb-[11px] pb-[8px]"
             >
               Hi, I'm Atik!
             </h1>
             <h1
-              className="[@media(min-width:1100px)]:!text-[55px] [@media(min-width:1050px)]:text-[50px] [@media(min-width:500px)]:text-[45px] [@media(min-width:380px)]:text-[30px] text-[25px] [@media(min-width:1050px)]:!leading-[55px] [@media(min-width:500px)]:leading-[50px] [@media(min-width:380px)]:leading-[35px] leading-[27px] font-[700] [@media(min-width:920px)]:mx-[] mx-auto text-[#130f49] ml-[-5px] pb-[15px]"
+              className="[@media(min-width:1050px)]:!text-[50px] [@media(min-width:500px)]:!text-[40px] [@media(min-width:380px)]:text-[30px] text-[25px] [@media(min-width:1050px)]:!leading-[55px] [@media(min-width:500px)]:!leading-[50px] [@media(min-width:380px)]:leading-[35px] leading-[27px] font-[700] [@media(min-width:920px)]:mx-[] mx-auto text-[#130f49] ml-[-5px] pb-[15px]"
             >
               Creative
               <span className="text-[#FFAC2A] [@media(min-width:640px)]:pl-[10px] pl-[5px]">
@@ -64,7 +64,7 @@ function HomeBanner() {
                 <Cursor cursorStyle="|" />
               </span>
             </h1>
-            <p className="[@media(min-width:1165px)]:!text-[16px] [@media(min-width:1050px)]:text-[15px] [@media(min-width:400px)]:text-[13px] text-[12px] [@media(min-width:920px)]:mx-0 mx-auto [@media(min-width:440px)]:leading-[25px] leading-[20px] KarlaFont">
+            <p className="[@media(min-width:1050px)]:!text-[15px] [@media(min-width:400px)]:text-[13px] text-[12px] [@media(min-width:920px)]:mx-0 mx-auto [@media(min-width:440px)]:leading-[25px] leading-[20px] KarlaFont">
               I'm a Bangladesh based web designer & front‑end developer focused on crafting<br className="[@media(min-width:920px)]:!hidden [@media(min-width:610px)]:flex hidden"/>  <br className="[@media(min-width:1165px)]:flex hidden"/> clean & user‑friendly experiences, I am passionate about building excellent software<br className="[@media(min-width:920px)]:!hidden [@media(min-width:610px)]:flex hidden"/><br className="[@media(min-width:1165px)]:flex hidden"/> that improves the lives of those around me.
             </p>
             <div className="flex [@media(min-width:920px)]:justify-start justify-center items-center pt-[20px] [@media(min-width:920px)]:mx-0 mx-auto">

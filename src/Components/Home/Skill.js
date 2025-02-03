@@ -71,6 +71,10 @@ const Skill = () => {
 
   return (
     <div className="w-full h-full relative" id="Skill">
+                                <ScrollTrigger
+                            onEnter={() => setCountState(true)}
+                            onExit={() => setCountState(false)}
+                          >
       <main
         className={`w-full h-full relative border-b-[1px] border-b-[#00000038] border-dashed [@media(min-width:1290px)]:!px-[3rem] [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem]`}
       >
@@ -125,10 +129,7 @@ const Skill = () => {
                     <div className="absolute left-0 top-0 w-full h-full rounded-[50%] flex items-center justify-center">
                       <div className="w-[90%] h-[90%] rounded-[50%] bg-[#ffffff] flex items-center justify-center text-center">
                         <div className="w-[40px] [@media(min-width:450px)]:h-[22px] h-[18px] flex items-center justify-center">
-                          <ScrollTrigger
-                            onEnter={() => setCountState(true)}
-                            onExit={() => setCountState(false)}
-                          >
+
                             <p className="[@media(min-width:450px)]:text-[26px] text-[23px] font-[900] GeologicaFont text-[#FFAC2A]">
                               {countState && (
                                 <CountUp
@@ -143,7 +144,6 @@ const Skill = () => {
                                 %
                               </span>
                             </p>
-                          </ScrollTrigger>
                         </div>
                       </div>
                     </div>
@@ -160,6 +160,7 @@ const Skill = () => {
           </div>
         </div>
       </main>
+      </ScrollTrigger>
     </div>
   );
 };

@@ -102,6 +102,7 @@ const ExperienceEducation = () => {
                   <div
                     key={key.id}
                     className={`w-full h-[120px] flex justify-end items-center ${key.marginBottomStyle} relative`}
+                     
                   >
                     {/* Border Left */}
                     <div className="absolute top-0 [@media(min-width:560px)]:left-[17.5px] left-[15px] bg-[#d2d2d2] w-[1px] h-full z-[1]"></div>
@@ -111,7 +112,7 @@ const ExperienceEducation = () => {
                     </div>
 
                     {/* Content */}
-                    <div className="w-[94%] h-[100%] grid text-left items-center rounded-[10px] pl-[25px]  [@media(min-width:460px)]:pr-[25px] pr-0 mr-[3px] pb-[5px]">
+                    <div className="w-[94%] h-[100%] grid text-left items-center rounded-[10px] pl-[25px]  [@media(min-width:460px)]:pr-[25px] pr-0 mr-[3px] pb-[5px]" data-aos="fade-left">
                       <p className="OpenSans font-[600] [@media(min-width:560px)]:text-[12px] [@media(min-width:460px)]:text-[11px] text-[10px] bg-[#cbcbcb9c] rounded-[20px] px-[10px] py-[1px] text-black w-fit h-fit opacity-[.8]">
                         {key.date}
                       </p>
@@ -147,6 +148,7 @@ const ExperienceEducation = () => {
                   <div
                     key={key.id}
                     className={`w-full h-[120px] flex justify-end items-center ${key.marginBottomStyle} relative`}
+                     
                   >
                     {/* Border Left */}
                     <div className="absolute top-0 [@media(min-width:560px)]:left-[17.5px] left-[15px] bg-[#d2d2d2] w-[1px] h-full z-[1]"></div>
@@ -156,7 +158,7 @@ const ExperienceEducation = () => {
                     </div>
 
                     {/* Content */}
-                    <div className="w-[94%] h-[100%] grid text-left items-center rounded-[10px] pl-[25px]  [@media(min-width:460px)]:pr-[25px] pr-0 mr-[3px] pb-[5px]">
+                    <div className="w-[94%] h-[100%] grid text-left items-center rounded-[10px] pl-[25px]  [@media(min-width:460px)]:pr-[25px] pr-0 mr-[3px] pb-[5px]" data-aos="fade-left">
                       <p className="OpenSans font-[600] [@media(min-width:560px)]:text-[12px] [@media(min-width:460px)]:text-[11px] text-[10px] bg-[#cbcbcb9c] rounded-[20px] px-[10px] py-[1px] text-black w-fit h-fit opacity-[.8]">
                         {key.date}
                       </p>
