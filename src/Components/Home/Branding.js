@@ -7,7 +7,8 @@ import Brand4 from "../../Image/Branding/brand_4.png";
 import Brand5 from "../../Image/Branding/brand_5.png";
 import Brand6 from "../../Image/Branding/brand_6.png";
 
-const Branding = () => {
+const Branding = () =>
+{
   const BrandingData = [
     {
       id: 1,
@@ -81,7 +82,8 @@ const Branding = () => {
             <div className="absolute right-[-2px] bottom-0 [@media(min-width:500px)]:w-[50px] w-[30px] [@media(min-width:500px)]:h-[70px] h-[30px] bg-gradient-to-l from-white z-[10]"></div>
             <div className="absolute left-[-2px] bottom-0 [@media(min-width:500px)]:w-[50px] w-[30px] [@media(min-width:500px)]:h-[70px] h-[30px] bg-gradient-to-r from-white z-[10]"></div>
             <Marquee className="pt-[5px]">
-              {BrandingData.map((key) => {
+              {BrandingData.map((key) =>
+              {
                 return (
                   <div
                     key={key.id}
@@ -90,7 +92,7 @@ const Branding = () => {
                     <img
                       src={key.image}
                       className="w-full"
-                      alt={`Brand ${key.id}`}
+                      alt={`Brand ${ key.id }`}
                     />
                   </div>
                 );
