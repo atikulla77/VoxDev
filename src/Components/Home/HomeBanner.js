@@ -48,6 +48,7 @@ function HomeBanner() {
           </div>
           <div
             className="[@media(min-width:920px)]:w-[60%] [@media(min-width:768px)]:w-[90%] w-[100%] z-10 GeologicaFont text-[#55527c] relative [@media(min-width:920px)]:text-left text-center [@media(min-width:920px)]:pt-0 pt-[30px] [@media(min-width:920px)]:pb-0 pb-[3rem]"
+             data-aos="fade-right"
           >
             <h1
               className="[@media(min-width:1050px)]:!text-[50px] [@media(min-width:500px)]:!text-[40px] [@media(min-width:380px)]:text-[30px] text-[25px] [@media(min-width:1050px)]:!leading-[55px] [@media(min-width:500px)]:!leading-[50px] [@media(min-width:380px)]:leading-[35px] leading-[27px] font-[700] [@media(min-width:920px)]:mx-[] mx-auto text-[#130f49] ml-[-5px] [@media(min-width:640px)]:pb-[11px] pb-[8px]"
@@ -83,7 +84,7 @@ function HomeBanner() {
           </div>
           <div
             className="w-[700px] h-[100%] [@media(min-width:920px)]:flex hidden justify-center items-center z-10 overflow-hidden"
-            data-aos="fade-right"
+            data-aos="fade-left"
           >
             <img src={profilePhoto} alt="" className="" />
           </div>
