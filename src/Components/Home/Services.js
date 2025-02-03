@@ -63,7 +63,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="w-full h-full relative" id="Skill">
+    <div className="w-full h-full relative" id="Service">
       <main
         className={`w-full h-full relative border-b-[1px] border-b-[#00000038] border-dashed [@media(min-width:1290px)]:!px-[3rem] [@media(min-width:550px)]:px-[2rem] [@media(min-width:450px)]:px-[1.5rem] px-[1rem]`}
       >
@@ -85,6 +85,7 @@ const Services = () => {
               data-aos="fade-right"
             >
               <img
+                alt=""
                 src={tittlePartical}
                 className="[@media(min-width:600px)]:w-[19px] w-[15px]"
               />
@@ -95,6 +96,7 @@ const Services = () => {
               data-aos="fade-left"
             >
               <img
+                alt=""
                 src={tittlePartical}
                 className="[@media(min-width:600px)]:w-[19px] w-[15px] scale-x-[-1]"
               />

@@ -10,12 +10,14 @@ import item_4 from "../../Image/Portfolio/item_4.jpg";
 import item_5 from "../../Image/Portfolio/item_5.jpg";
 import item_6 from "../../Image/Portfolio/item_6.jpg";
 
-const Portfolio = () => {
+const Portfolio = () =>
+{
   // OnClick to protfolio image
-  const [showPopUpImg, setshowPopUpImg] = useState(false);
-  const [popUpImg, setpopUpImg] = useState(item_1);
+  const [ showPopUpImg, setshowPopUpImg ] = useState(false);
+  const [ popUpImg, setpopUpImg ] = useState(item_1);
 
-  const OnClickToShowAndSetPopUpImg = (x) => {
+  const OnClickToShowAndSetPopUpImg = (x) =>
+  {
     setpopUpImg(x);
     setshowPopUpImg(true);
   };
@@ -54,35 +56,39 @@ const Portfolio = () => {
     ...PhotosCatagoryCard,
   ];
 
-  const [Catagory, setCatagory] = useState(AllCatagoryCard);
+  const [ Catagory, setCatagory ] = useState(AllCatagoryCard);
   // ********************************************************
-  const [onClickProjectLi1, setOnClickProjectLi1] = useState("true");
-  const [onClickProjectLi2, setOnClickProjectLi2] = useState("false");
-  const [onClickProjectLi3, setOnClickProjectLi3] = useState("false");
-  const [onClickProjectLi4, setOnClickProjectLi4] = useState("false");
+  const [ onClickProjectLi1, setOnClickProjectLi1 ] = useState("true");
+  const [ onClickProjectLi2, setOnClickProjectLi2 ] = useState("false");
+  const [ onClickProjectLi3, setOnClickProjectLi3 ] = useState("false");
+  const [ onClickProjectLi4, setOnClickProjectLi4 ] = useState("false");
 
-  const HandleProjectLi1 = () => {
+  const HandleProjectLi1 = () =>
+  {
     setOnClickProjectLi1("true");
     setOnClickProjectLi2("false");
     setOnClickProjectLi3("false");
     setOnClickProjectLi4("false");
     setCatagory(AllCatagoryCard);
   };
-  const HandleProjectLi2 = () => {
+  const HandleProjectLi2 = () =>
+  {
     setOnClickProjectLi1("false");
     setOnClickProjectLi2("true");
     setOnClickProjectLi3("false");
     setOnClickProjectLi4("false");
     setCatagory(BrandCatagoryCard);
   };
-  const HandleProjectLi3 = () => {
+  const HandleProjectLi3 = () =>
+  {
     setOnClickProjectLi1("false");
     setOnClickProjectLi2("false");
     setOnClickProjectLi3("true");
     setOnClickProjectLi4("false");
     setCatagory(DesignCatagoryCard);
   };
-  const HandleProjectLi4 = () => {
+  const HandleProjectLi4 = () =>
+  {
     setOnClickProjectLi1("false");
     setOnClickProjectLi2("false");
     setOnClickProjectLi3("false");
@@ -117,6 +123,7 @@ const Portfolio = () => {
       <div className="absolute right-0 top-0 w-full flex justify-center overflow-hidden z-[0]">
         <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-end">
           <img
+            alt=""
             src={partical_1}
             className="[@media(min-width:660px)]:!w-[170px] [@media(min-width:460px)]:w-[140px] w-[120px]"
           />
@@ -124,7 +131,7 @@ const Portfolio = () => {
       </div>
       <div className="absolute right-[-165px] top-0 w-full [@media(min-width:1536px)]:flex hidden justify-center overflow-hidden z-[0]">
         <div className="[@media(min-width:1536px)]:w-[1536px] w-full mx-auto flex justify-end">
-          <img src={partical_1} className="w-[170px] scale-x-[-1]" />
+          <img src={partical_1} alt="" className="w-[170px] scale-x-[-1]" />
         </div>
       </div>
       <main
@@ -146,13 +153,15 @@ const Portfolio = () => {
             <div className="absolute left-[-5px] bottom-0" data-aos="fade-right">
               <img
                 src={tittlePartical}
+                alt=""
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px]"
               />
             </div>
             {/* Tittle Right Partical */}
-            <div className="absolute right-[-5px] bottom-0" data-aos="fade-left">
+            <div className="absolute right-[-5px] bottom-0" data-aos="fade-top">
               <img
                 src={tittlePartical}
+                alt=""
                 className="[@media(min-width:500px)]:w-[19px] [@media(min-width:600px)]:w-[17px] w-[15px] scale-x-[-1]"
               />
             </div>
@@ -166,17 +175,17 @@ const Portfolio = () => {
             <div className="flex items-center justify-center text-center w-[100%]">
               <ul className="flex justify-center items-center font-[400]">
                 <li
-                  className={`[@media(min-width:460px)]:text-[15px] text-[12px] cursor-pointer ${
-                    onClickProjectLi1 === "true"
+                  className={`[@media(min-width:460px)]:text-[15px] text-[12px] cursor-pointer ${ onClickProjectLi1 === "true"
                       ? "text-[#FFAC2A] drop-shadow-[0px_0px_1px_#ffad2a60]"
                       : "text-[#130f49] hover:text-[#FFAC2A] drop-shadow-[0px_0px_1px_#00000052] transition-[0.1s]"
-                  }`}
+                    }`}
                   onClick={HandleProjectLi1}
                 >
                   All
                 </li>
 
-                {PortfolioNavItem.map((key) => {
+                {PortfolioNavItem.map((key) =>
+                {
                   return (
                     <div className="flex items-center" key={key.id}>
                       <div className="text-[#FFAC2A] [@media(min-width:460px)]:text-[19px] text-[15px] [@media(min-width:460px)]:mx-[1rem] mx-[0.6rem] drop-shadow-[0px_0px_1px_#FFAC2A]">
@@ -184,11 +193,10 @@ const Portfolio = () => {
                       </div>
                       <li
                         key={key.id}
-                        className={`[@media(min-width:460px)]:text-[15px] text-[12px]  cursor-pointer ${
-                          key.dynamicClassName === "true"
+                        className={`[@media(min-width:460px)]:text-[15px] text-[12px]  cursor-pointer ${ key.dynamicClassName === "true"
                             ? "text-[#FFAC2A] drop-shadow-[0px_0px_1px_#ffad2a60]"
                             : "text-[#130f49] hover:text-[#FFAC2A] drop-shadow-[0px_0px_1px_#00000052] transition-[0.1s]"
-                        }`}
+                          }`}
                         onClick={key.onClick}
                       >
                         {key.tittle}
@@ -203,10 +211,11 @@ const Portfolio = () => {
                 <div key={catagory.id}>
                   <label
                     className={`[@media(min-width:450px)]:!w-[350px] [@media(min-width:400px)]:w-[300px] [@media(min-width:360px)]:w-[280px] w-[250px] h-[100%] overflow-hidden [@media(min-width:450px)]:mx-[15px] mx-0 my-[15px] relative flex justify-center items-center cursor-pointer shadow-[0px_0px_6px_0px_#00000024] rounded-[5px]`}
-                     data-aos="fade-up-left"
+                    data-aos="fade-up-in"
                   >
                     <div
-                      onClick={() => {
+                      onClick={() =>
+                      {
                         OnClickToShowAndSetPopUpImg(catagory.img);
                       }}
                       className={`w-[100%] h-[100%] overflow-hidden rounded-[5px] portfolioCard`}
@@ -233,18 +242,19 @@ const Portfolio = () => {
         </div>
         {/* Pop Up Img */}
         <div
-          className={`w-[100%] h-[100vh] fixed top-0 left-0 right-0 ${
-            showPopUpImg ? "flex" : "hidden"
-          } justify-center items-center z-[60] bg-[#ffffffd2]`}
+          className={`w-[100%] h-[100vh] fixed top-0 left-0 right-0 ${ showPopUpImg ? "flex" : "hidden"
+            } justify-center items-center z-[60] bg-[#ffffffd2]`}
         >
           <img
             src={popUpImg}
+            alt=""
             className="[@media(min-width:800px)]:!w-auto [@media(min-width:700px)]:w-[35rem] [@media(min-width:575px)]:w-[30rem] [@media(min-width:450px)]:w-[25rem] w-[19.5rem] [@media(min-width:800px)]:h-full h-auto mx-auto absolute right-0 left-0 py-[8px] z-[29]"
-             data-aos="zoom-in"
+            data-aos="zoom-in"
           />
 
           <p
-            onClick={() => {
+            onClick={() =>
+            {
               setshowPopUpImg(false);
             }}
             className={`text-[#696969] [@media(min-width:555px)]:w-[35px] w-[25px] [@media(min-width:555px)]:h-[35px] h-[25px] flex [@media(min-width:555px)]:text-[45px] text-[35px] rotate-[45deg] text-center justify-center items-center absolute [@media(min-width:555px)]:top-[1rem] top-[10px] [@media(min-width:555px)]:right-[1rem] right-[13px] cursor-pointer z-[29] rounded-[50%]`}
@@ -253,7 +263,8 @@ const Portfolio = () => {
           </p>
 
           <div
-            onClick={() => {
+            onClick={() =>
+            {
               setshowPopUpImg(false);
             }}
             className="w-full h-full relative z-[28]"
