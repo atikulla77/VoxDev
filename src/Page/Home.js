@@ -12,7 +12,7 @@ import Services from "../Components/Home/Services";
 
 const Home = () => {
   return (
-    <div className="w-full h-[100%] scrollbar-hide">
+    <div className="w-full h-[100%] overflow-x-hidden">
       <HomeBanner />
       <Branding />
       <AboutMe />
